@@ -12,7 +12,7 @@ const AdditionalFeatures = props => {
             <AdditionalFeature
               key={item.id}
               feature={item}
-              buyitem={props.buyItem}
+              addFeature={props.addFeature}
             />
           ))}
         </ol>

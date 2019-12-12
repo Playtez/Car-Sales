@@ -1,13 +1,14 @@
 import React from "react";
-// import { buyItem } from "./actions/actions";
 
 const AdditionalFeature = props => {
-  console.log(props.buyItem());
-
+  // console.log(props.feature);
   return (
     <li>
       {/* Add an onClick that will let you add a feature to your car */}
-      <button onClick={props.buyItem} className="button">
+      <button
+        onClick={() => props.addFeature(props.feature)}
+        className="button"
+      >
         Add
       </button>
       {props.feature.name} (+{props.feature.price})
